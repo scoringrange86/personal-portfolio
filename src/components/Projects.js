@@ -14,11 +14,13 @@ export const Projects = () => {
       title: "Ecommerce",
       description: "MERN Stack Development",
       imgUrl: Ecommerce,
+      externalLink: "https://scoringrange86.github.io/juiceshop-frontend/",
     },
     {
       title: "Cryptovisor",
       description: "HTML/CSS/Javascript",
       imgUrl: Cryptovisor,
+      externalLink: "https://scoringrange86.github.io/cryptovisor-frontend/",
     }
   ];
 
