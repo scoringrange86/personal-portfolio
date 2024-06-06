@@ -487,6 +487,7 @@ Banner Css
 .contact {
   background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
   padding: 60px 0 200px 0;
+  background-image: url('./assets/img/traveling_cosmos.gif');
 }
 .contact img {
   width: 92%;
