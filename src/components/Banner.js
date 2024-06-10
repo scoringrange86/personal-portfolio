@@ -27,7 +27,7 @@ export const Banner = () => {
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
   // List of words being rotated
-  const toRotate = [ "Technologist", "Researcher", "Digital Philosopher" ];
+  const toRotate = [ "Technologist", "Musician", "Philosopher", "Poet","Researcher" ];
   // Time interval between each word being typed
   const period = 2000;
 

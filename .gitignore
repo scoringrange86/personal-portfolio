@@ -27,3 +27,5 @@ yarn-error.log*
 
 #server 
 server.js
+components/SkillsBar.js
+

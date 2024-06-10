@@ -634,3 +634,179 @@ Banner Css
   letter-spacing: 0.5px;
   margin-top: 20px;
 }
+
+
+/************ SkillsBar Css ************/
+
+
+/* .sb-container{
+  position: relative;
+  max-width: 500px;
+  width: 100%;
+  background: #fff;
+  margin: 0 15px;
+  padding: 10px 20px;
+  border-radius: 7px;
+} */
+
+.sb-container{
+  position: relative;
+  width: 70%;
+  background: #fff;
+  margin: auto;
+  padding: 10px 20px;
+  border-radius: 7px;
+}
+
+.title-text {
+  text-align: center;
+  background-color: crimson;
+  color: #fff;
+  font-weight: 400;
+  border-radius: 50px;
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+/* 
+.skill-levels-container {
+  display: flex; 
+} */
+
+.sb-container .skill-box {
+  width: 100%;
+  margin: 25px 0;
+}
+
+/* .sb-container .skill-box {
+  width: 100%;
+  margin: auto auto;
+  display: block;
+  background-color: BLUE;;
+} */
+
+.skill-box .title{
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+}
+
+.skill-box .skill-bar{
+  height: 8px;
+  width: 70%;
+  border-radius: 6px;
+  margin-top: 6px;
+  background: rgba(0,0, 0, 0.1);
+}
+
+/* .skill-box .skill-bar{
+  background-color: #181818;
+  position: relative;
+  transform: translateY(-50%);
+  top: 50%;
+  margin-left: 50px;
+  width: 30px;
+  height: 320px;
+  float: left;
+  border-radius: 6px;
+} */
+
+.skill-box .skill-per{
+  position: relative;
+  display: block;
+  height: 100%;
+  width: 95%;
+  border-radius: 6px;
+  background: #32cd32;
+  animation: progress 0.4s ease-in-out forwards;
+  opacity: 0;
+}
+
+/* .skill-box .skill-per{
+  background-color: #32cd32;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 80%;
+  box-sizing: border-box;
+  animation: progress 1.5s ease-out forwards;
+  transform-origin: bottom;
+  border-radius: 6px;
+} */
+
+.skill-per.css {
+  width: 80%;
+  animation-delay: 0.1s;
+}
+
+.skill-per.javascript{
+  width: 60%;
+  animation-delay: 0.2s;
+}
+.skill-per.nodejs{
+  width: 40%;
+  animation-delay: 0.3s;
+}
+.skill-per.reactjs{
+  width: 70%;
+  animation-delay: 0.3s;
+}
+.skill-per.expressjs{
+  width: 75%;
+  animation-delay: 0.3s;
+}
+
+
+@keyframes progress {
+  0% {
+      width: 0;
+      opacity: 1;
+  }
+
+  100% {
+      opacity: 1;
+  }
+}
+
+
+/* @keyframes progress {
+  from{
+    transform: scaleY(0);
+  }
+} */
+
+.skill-per .tooltip{
+  position: absolute;
+  right: -14px;
+  top: -28px;
+  font-size: 9px;
+  font-weight: 500;
+  color: #fff;
+  padding: 2px 6px;
+  border-radius: 3px;
+  background: crimson;
+  z-index: 3;
+}
+
+/* .skill-per .tooltip{
+  position: absolute;
+  font-size: 9px;
+  font-weight: 500;
+  color: #621414;
+  padding: 2px 6px;
+  border-radius: 3px;
+  background: crimson;
+  z-index: 3;
+} */
+
+.tooltip::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -2px;
+  height: 10px;
+  width: 10px;
+  z-index: -1;
+  background-color: crimson;
+  transform: translateX(-50%) rotate(45deg);
+}
